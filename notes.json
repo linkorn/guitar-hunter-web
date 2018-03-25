@@ -1,0 +1,18 @@
+[
+  {
+    "spring": 1,
+    "chord": 1,
+    "note": "F",
+    "file": "1-1-fs",
+    "freq": 1
+  },
+  {
+    "spring": 1,
+    "chord": 2,
+    "note": "F#",
+    "file": "1-1-fs",
+    "freq": 1
+  }
+]
+
+

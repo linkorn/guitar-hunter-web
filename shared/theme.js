@@ -1,7 +1,7 @@
 import { css } from 'react-emotion';
 
 export const breakpoints = {
-  mobile: 600,
+  mobile: 800,
   medium: 960,
   desktop: 1200,
 };
@@ -25,7 +25,7 @@ export const media = {
 };
 
 export const colors = {
-  background: '#ffffff',
+  background: '#924f30',
 };
 
 const theme = {

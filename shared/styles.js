@@ -1,4 +1,4 @@
-import { injectGlobal } from "react-emotion";
+import { injectGlobal } from 'react-emotion';
 
 export const injectGlobalStyles = () => injectGlobal`
 html,
@@ -115,62 +115,24 @@ svg:not(:root) {
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/static/fonts/Lato-Light.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/static/fonts/Lato-LightItalic.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/static/fonts/Lato-Regular.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/static/fonts/Lato-Italic.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/static/fonts/Lato-Bold.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(/static/fonts/Lato-Bold.woff) format('woff');
-}
+
 html,body{
   margin: 0;
   padding: 0;
 }
+html{
+  overflow-y:auto;
+}
 body {
   min-width:320px;
-  min-height: 100vh;
+  min-height: 1080px;
   position:relative;
   background: #EAEAEA;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  overflow: hidden;
+  font-family: 'VT323', monospace;
 }
 
 `;

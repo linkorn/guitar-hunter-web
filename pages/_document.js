@@ -33,6 +33,10 @@ export default class MyDocument extends Document {
           <Analytics />
           <title key="title">{text.title}</title>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <link
+            href="https://fonts.googleapis.com/css?family=VT323"
+            rel="stylesheet"
+          />
           <Favicon />
         </Head>
         <body>
