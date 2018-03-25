@@ -115,7 +115,12 @@ class Subscription extends React.Component {
       method: 'post',
       url: 'https://guitar-hunter.eu/subscribe',
       data: bodyFormData,
-      config: { headers: { 'Content-Type': 'multipart/form-data' } },
+      config: {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          'Cache-Control': 'no-cache',
+        },
+      },
     })
       .then((response) => {
         // console.log(response);
