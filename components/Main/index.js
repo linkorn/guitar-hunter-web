@@ -113,7 +113,7 @@ class Subscription extends React.Component {
     bodyFormData.set('mail', email);
     axios({
       method: 'post',
-      url: 'http://193.124.177.110:9035',
+      url: 'https://guitar-hunter.eu/subscribe',
       data: bodyFormData,
       config: { headers: { 'Content-Type': 'multipart/form-data' } },
     })
