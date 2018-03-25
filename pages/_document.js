@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, minimal-ui"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
           />
           <Analytics />
           <title key="title">{text.title}</title>
