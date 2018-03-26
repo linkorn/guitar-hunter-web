@@ -4,14 +4,14 @@ import axios from 'axios';
 import text from '../../shared/text.json';
 
 const Wrapper = styled.main`
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   ${({ theme }) => theme.media.mobile`
-  padding: 50px 16px;
+  padding: 50px 16px 0 16px;
   `};
 `;
 

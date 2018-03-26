@@ -112,7 +112,7 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -121,16 +121,12 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-}
-html{
-  overflow-y:auto;
 }
 body {
-  min-width:320px;
+  /* min-width:320px;
   min-height: 1080px;
   position:relative;
-  background: #EAEAEA;
+  background: #EAEAEA; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
