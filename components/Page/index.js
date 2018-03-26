@@ -8,10 +8,6 @@ const Bg = styled.div`
   height: 100%;
   bottom: 0;
   right: 0;
-  background: linear-gradient(to bottom, #7db9e8 0%, #793e19 100%);
-  background-image: url(/static/bg.jpg);
-  background-size: cover;
-
   ${({ theme }) => theme.media.mobile`
   background: linear-gradient(to bottom, #7db9e8 0%, #793e19 100%);
   `};

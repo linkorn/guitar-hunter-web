@@ -4,14 +4,14 @@ import axios from 'axios';
 import text from '../../shared/text.json';
 
 const Wrapper = styled.main`
-  padding: 50px 0 0 0;
+  padding: 50px 0 50px 0;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   ${({ theme }) => theme.media.mobile`
-  padding: 50px 16px 0 16px;
+  padding: 50px 16px 50px 16px;
   `};
 `;
 
@@ -27,6 +27,9 @@ const H2 = styled.h2`
 `;
 
 const Presentation = styled.piclure`
+  > img {
+    margin-left: 10px;
+  }
   ${({ theme }) => theme.media.mobile`
   >img{
     width: 100%;
@@ -178,10 +181,10 @@ const HiddenSpan = styled.span`
   border: 0;
 `;
 const Markets = styled.div`
-  margin: 40px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 100%;
   > img {
     opacity: 0.6;
   }
@@ -198,8 +201,6 @@ export default () => (
     <Presentation>
       <img src="/static/phone.png" alt="Game screenshot" />
     </Presentation>
-    <Form />
-
     <Subscription />
     <Markets>
       <img src="/static/google.png" aria-hidden="true" alt="Google Play" />

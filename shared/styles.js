@@ -118,7 +118,7 @@ svg:not(:root) {
 
 html,body{
   width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -127,11 +127,28 @@ body {
   min-height: 1080px;
   position:relative;
   background: #EAEAEA; */
+  position:relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   font-family: 'VT323', monospace;
+  
+}
+body > div:first-child{
+        position:relative;
+        width:100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #7db9e8 0%, #793e19 100%);
+  background-image: url(/static/bg.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+      }
+      @media only screen 
+and (max-device-width : 800px){
+  body > div:first-child{
+    background: linear-gradient(to bottom, #7db9e8 0%, #793e19 100%);
+  }
 }
 
 `;

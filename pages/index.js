@@ -1,6 +1,5 @@
 import React from 'react';
 import withEmotion from 'hoc/withEmotion';
-import Page from 'components/Page';
 import Main from 'components/Main';
 import Meta from 'components/Meta';
 
@@ -12,9 +11,7 @@ const App = withEmotion(() => [
     url="https://guitar-hunter.eu"
     keywords="Android game, IOS game, iphone game, guitar, music game for iphone, cowboy game, country music game"
   />,
-  <Page key="page">
-    <Main />
-  </Page>,
+  <Main key="main" />,
 ]);
 
 export default App;
